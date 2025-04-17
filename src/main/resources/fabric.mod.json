@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "mobarise",
+	"version": "${version}",
+	"name": "Mob Arise",
+	"description": "The Mod to make some Minecraft mob become primary and strongly!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mobarise/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"fabric.hieurury.mobarise.MobArise"
+		],
+		"fabric-datagen": [
+			"fabric.hieurury.mobarise.MobAriseDataGenerator"
+		], "client": [
+			"fabric.hieurury.mobarise.MobAriseClient"
+		]
+	},
+	"mixins": [
+		"mobarise.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
