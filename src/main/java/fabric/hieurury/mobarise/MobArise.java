@@ -1,5 +1,7 @@
 package fabric.hieurury.mobarise;
 
+import fabric.hieurury.mobarise.block.ModBlocks;
+import fabric.hieurury.mobarise.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,9 @@ public class MobArise implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		//đăng kí item với game
+		ModItems.registerModItems();
+		//đăng kí block với game
+		ModBlocks.registerModBlocks();
 	}
 }
